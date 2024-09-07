@@ -47,3 +47,65 @@ export const FeaturedProducts = [
     featuredPrice: "$42.00",
   },
 ];
+
+export const LatestProducts = [
+  {
+    img: `${url}/latestchair.png`,
+    text: "Comfort Handy Craft",
+    price: "$42.00",
+    previousPrice: "$65.00",
+  },
+  {
+    img: `${url}/latestchair.png`,
+    text: "Comfort Handy Craft",
+    price: "$42.00",
+    previousPrice: "$65.00",
+  },
+  {
+    img: `${url}/latestchair.png`,
+    text: "Comfort Handy Craft",
+    price: "$42.00",
+    previousPrice: "$65.00",
+  },
+  {
+    img: `${url}/latestchair.png`,
+    text: "Comfort Handy Craft",
+    price: "$42.00",
+    previousPrice: "$65.00",
+  },
+  {
+    img: `${url}/latestchair.png`,
+    text: "Comfort Handy Craft",
+    price: "$42.00",
+    previousPrice: "$65.00",
+  },
+  {
+    img: `${url}/latestchair.png`,
+    text: "Comfort Handy Craft",
+    price: "$42.00",
+    previousPrice: "$65.00",
+  },
+];
+
+export const Offer = [
+  {
+    img:`${url}/offer.svg`,
+    title: "24/7 Support",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+  },
+  {
+    img: `${url}/Offer2.svg`,
+    title: "24/7 Support",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+  },
+  {
+    img:`${url}/offer.svg`,
+    title: "24/7 Support",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+  },
+  {
+    img:`${url}/offer.svg`,
+    title: "24/7 Support",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+  },
+];

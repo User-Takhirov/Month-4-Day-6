@@ -1,7 +1,11 @@
-import { Banners, FeaturedProducts } from "./main.js";
+import { Banners, FeaturedProducts, LatestProducts, Offer } from "./main.js";
 
 const hero = document.querySelector(".hero");
 const featuredProducts = document.querySelector(".featuredProducts");
+const buttons = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
+const product = document.querySelector(".productBlock");
+const offerBlock = document.querySelector(".offerBlock");
 
 hero.innerHTML = Banners.map(
   (item) => `
@@ -33,4 +37,58 @@ featuredProducts.innerHTML = FeaturedProducts.map(
 </div>
 </div>
 `
+).join("");
+
+product.innerHTML = LatestProducts.map(
+  (item) =>
+    `<div class="tab-content w-[360px] " id="tab-1">
+  <div class="">
+  <img class="bg-[#F7F7F7] pb-[8px] mb-[23px] text-center px-[70px] mx-auto pt-[38px]" src="${item.img}"</div>
+  <div class="flex justify-between items-center">
+  <p class="font-[500] text-[16px] text-[#151875]">${item.text}</p>
+  <div class="flex items-center gap-[10px]">
+  <p class="text-[14px] font-[500] text-[#151875]">${item.price}</p>
+  <p class="line-through font-[500] text-[14px] text-[#FB2448]">${item.previousPrice}</p>
+  </div>
+  </div>
+  </div>
+  </div>
+</div> 
+`
+).join("");
+
+const Tabs = () => {
+  const showTab = (tabNumber) => {
+    contents.forEach((content) => content.classList.add("hidden"));
+    buttons.forEach((button) =>
+      button.classList.remove(
+        "border-b-2",
+        "border-[#FB2E86]",
+        "text-[#FB2E86]"
+      )
+    );
+    document.getElementById(`tab-${tabNumber}`).classList.remove("hidden");
+    document
+      .querySelector(`button[data-tab="${tabNumber}"]`)
+      .classList.add("border-b-2", "border-[#FB2E86]", "text-[#FB2E86]");
+  };
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => showTab(button.dataset.tab));
+  });
+};
+document.addEventListener("DOMContentLoaded", () => {
+  Tabs();
+});
+
+offerBlock.innerHTML = Offer.map(
+  (item) =>
+    `<div class="flex gap-[28px] text-center">
+  <div class="bg-[#fff] shadow-xl"><img class="text-center mx-auto pt-[61px] mb-[27px]" src="${item.img}"</div>
+  <div class="px-[27px] pb-[45px]">
+  
+  <h3 class="mb-[20px] font-[600] text-[22px] text-[#151875]">${item.title}</h3>
+  <p class="text-[16px] font-[700] leading-[160%] text-[#BBB6CE]">${item.text}</p>
+  </div>
+  </div>
+  `
 ).join("");
