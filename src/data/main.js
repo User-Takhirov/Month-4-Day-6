@@ -89,7 +89,7 @@ export const LatestProducts = [
 
 export const Offer = [
   {
-    img:`${url}/offer.svg`,
+    img: `${url}/offer.svg`,
     title: "24/7 Support",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
@@ -99,12 +99,12 @@ export const Offer = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
   {
-    img:`${url}/offer.svg`,
+    img: `${url}/offer.svg`,
     title: "24/7 Support",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
   {
-    img:`${url}/offer.svg`,
+    img: `${url}/offer.svg`,
     title: "24/7 Support",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },

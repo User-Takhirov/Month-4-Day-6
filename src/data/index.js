@@ -50,7 +50,7 @@ product.innerHTML = LatestProducts.map(
   <p class="text-[14px] font-[500] text-[#151875]">${item.price}</p>
   <p class="line-through font-[500] text-[14px] text-[#FB2448]">${item.previousPrice}</p>
   </div>
-  </div>
+  </div>  
   </div>
   </div>
 </div> 
